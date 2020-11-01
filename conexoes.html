@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!-- Required meta tags -->
+	<title>Muzik</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	
+	<!-- AOS -->
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/application.css">
+	
+	
+</head>
+<body id="top">
+	<div class="load"><img src="assets/img/load.png" alt=""></div>
+	<div class="load-surprise d-none">
+		<div>
+            <div class="loader">
+                <svg id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
+                    <title>Audio Wave</title>
+                    <path id="Line_1" data-name="Line 1" d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z"/>
+                    <path id="Line_2" data-name="Line 2" d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z"/>
+                    <path id="Line_3" data-name="Line 3" d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91Z"/>
+                    <path id="Line_4" data-name="Line 4" d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91Z"/>
+                    <path id="Line_5" data-name="Line 5" d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91Z"/>
+                    <path id="Line_6" data-name="Line 6" d="M30.91,10l-0.12,0A1,1,0,0,0,30,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H30.91Z"/>
+                    <path id="Line_7" data-name="Line 7" d="M36.91,0L36.78,0A1,1,0,0,0,36,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H36.91Z"/>
+                    <path id="Line_8" data-name="Line 8" d="M42.91,9L42.78,9A1,1,0,0,0,42,10V28a1,1,0,1,0,2,0s0,0,0,0V10a1,1,0,0,0-1-1H42.91Z"/>
+                    <path id="Line_9" data-name="Line 9" d="M48.91,15l-0.12,0A1,1,0,0,0,48,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H48.91Z"/>
+                </svg>
+            </div>
+            <b style="text-align: center; color: #fff; display: table; width: 100%; padding-top: 15px">Estamos encontrando seu match</b>
+        </div>
+	</div>
+	<div class="container-fluid">
+		<div class="row no-gutters justify-content-between">
+			<div class="col-md-2">
+				<img class="logo" src="assets/img/logo.png" alt="">
+				<div class="content">
+					<div class="close">Fechar</div>
+					<div class="profile">
+						<img src="assets/img/user_photo.png" alt="">
+						<div class="w">
+							<div class="nome">Kamila</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+							</div>
+							<span>complete seu cadastro</span>
+						</div>
+					</div>
+					<ul class="navegation">
+						<li><a href="biblioteca.html"><img src="assets/img/menu_ico_1.png" alt=""> <span>Minhas Músicas</span></a></li>
+						<li class="active"><a href="conexoes.html"><img src="assets/img/menu_ico_2.png" alt=""> <span>Conexões</span></a></li>
+						<li><a href="banda.html"><img src="assets/img/menu_ico_3.png" alt=""> <span>Monte uma Banda</span></a></li>
+						<li><a href="explorar.html"><img src="assets/img/menu_ico_4.png" alt=""> <span>Explorar</span></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-md-8">
+				<div class="results">
+					<div class="row justify-content-center">
+						<div class="col-md-7">
+							<div class="result" id="result1">
+								<div class="head">
+									<div class="covers">
+										<div class="cover" style="background-image: url('assets/img/music_cover.png');">
+											<div class="up_down_volt">
+												<div class="down"><span>‹</span></div>
+												<div class="up"><span>›</span></div>
+											</div>
+										</div>
+										<div class="cover" style="background-image: url('assets/img/music_cover.png');">
+											<div class="up_down_volt">
+												<div class="down"><span>‹</span></div>
+												<div class="up"><span>›</span></div>
+											</div>
+										</div>
+									</div>
+									<div class="music_information">
+										<div class="loader">
+											<svg id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
+												<title>Audio Wave</title>
+												<path id="Line_1" data-name="Line 1" d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z"/>
+												<path id="Line_2" data-name="Line 2" d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z"/>
+												<path id="Line_3" data-name="Line 3" d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91Z"/>
+												<path id="Line_4" data-name="Line 4" d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91Z"/>
+												<path id="Line_5" data-name="Line 5" d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91Z"/>
+												<path id="Line_6" data-name="Line 6" d="M30.91,10l-0.12,0A1,1,0,0,0,30,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H30.91Z"/>
+												<path id="Line_7" data-name="Line 7" d="M36.91,0L36.78,0A1,1,0,0,0,36,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H36.91Z"/>
+												<path id="Line_8" data-name="Line 8" d="M42.91,9L42.78,9A1,1,0,0,0,42,10V28a1,1,0,1,0,2,0s0,0,0,0V10a1,1,0,0,0-1-1H42.91Z"/>
+												<path id="Line_9" data-name="Line 9" d="M48.91,15l-0.12,0A1,1,0,0,0,48,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H48.91Z"/>
+											</svg>
+										</div>
+										<div>
+											<div class="title">Astroworld</div>
+											<div class="artist">Travis Scott</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="infos">
+									<div class="photo_user">
+										<img src="assets/img/match_user_photo.png">
+									</div>
+									<div>
+										<div class="name">Bruno Leonardo</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam, odio amet ea ut autem dolorum natus commodi aliquam nam molestiae ducimus soluta temporibus eveniet? Aut nesciunt blanditiis voluptate neque!
+										</div>
+										<ul>
+											<li><img src="assets/img/profile_ico_location.png" alt="">  <span>São Paulo, SP</span></li>
+											<li><img src="assets/img/profile_ico_age.png" alt="">  <span>24 anos</span></li>
+											<li><img src="assets/img/profile_ico_music.png" alt="">  <span>125 músicas</span></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="interaction">
+									<div class="secondary"><img src="assets/img/card_ico_star.png" alt=""></div>
+									<div class="primary letsRock" data-id="1"><img src="assets/img/card_ico_rock.png" alt=""></div>
+									<div class="secondary letsReject"  data-id="1"><img src="assets/img/card_ico_close.png" alt=""></div>
+								</div>
+							</div>
+							
+							<div class="result" id="result2">
+								<div class="head">
+									<div class="covers">
+										<div class="cover" style="background-image: url('assets/img/music_cover.png');">
+											<div class="up_down_volt">
+												<div class="down"><span>‹</span></div>
+												<div class="up"><span>›</span></div>
+											</div>
+										</div>
+										<div class="cover" style="background-image: url('assets/img/music_cover.png');">
+											<div class="up_down_volt">
+												<div class="down"><span>‹</span></div>
+												<div class="up"><span>›</span></div>
+											</div>
+										</div>
+									</div>
+									<div class="music_information">
+										<div class="loader">
+											<svg id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
+												<title>Audio Wave</title>
+												<path id="Line_1" data-name="Line 1" d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z"/>
+												<path id="Line_2" data-name="Line 2" d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z"/>
+												<path id="Line_3" data-name="Line 3" d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91Z"/>
+												<path id="Line_4" data-name="Line 4" d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91Z"/>
+												<path id="Line_5" data-name="Line 5" d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91Z"/>
+												<path id="Line_6" data-name="Line 6" d="M30.91,10l-0.12,0A1,1,0,0,0,30,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H30.91Z"/>
+												<path id="Line_7" data-name="Line 7" d="M36.91,0L36.78,0A1,1,0,0,0,36,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H36.91Z"/>
+												<path id="Line_8" data-name="Line 8" d="M42.91,9L42.78,9A1,1,0,0,0,42,10V28a1,1,0,1,0,2,0s0,0,0,0V10a1,1,0,0,0-1-1H42.91Z"/>
+												<path id="Line_9" data-name="Line 9" d="M48.91,15l-0.12,0A1,1,0,0,0,48,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H48.91Z"/>
+											</svg>
+										</div>
+										<div>
+											<div class="title">Astroworld</div>
+											<div class="artist">Travis Scott</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="infos">
+									<div class="photo_user">
+										<img src="assets/img/match_user_photo.png">
+									</div>
+									<div>
+										<div class="name">Bruno Leonardo</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam, odio amet ea ut autem dolorum natus commodi aliquam nam molestiae ducimus soluta temporibus eveniet? Aut nesciunt blanditiis voluptate neque!
+										</div>
+										<ul>
+											<li><img src="assets/img/profile_ico_location.png" alt="">  <span>São Paulo, SP</span></li>
+											<li><img src="assets/img/profile_ico_age.png" alt="">  <span>24 anos</span></li>
+											<li><img src="assets/img/profile_ico_music.png" alt="">  <span>125 músicas</span></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="interaction">
+									<div class="secondary"><img src="assets/img/card_ico_star.png" alt=""></div>
+									<div class="primary letsRock" data-id="2"><img src="assets/img/card_ico_rock.png" alt=""></div>
+									<div class="secondary letsReject"  data-id="2"><img src="assets/img/card_ico_close.png" alt=""></div>
+								</div>
+							</div>
+							
+							<div class="result" id="result3">
+								<div class="head">
+									<div class="covers">
+										<div class="cover" style="background-image: url('assets/img/music_cover.png');">
+											<div class="up_down_volt">
+												<div class="down"><span>‹</span></div>
+												<div class="up"><span>›</span></div>
+											</div>
+										</div>
+										<div class="cover" style="background-image: url('assets/img/music_cover.png');">
+											<div class="up_down_volt">
+												<div class="down"><span>‹</span></div>
+												<div class="up"><span>›</span></div>
+											</div>
+										</div>
+									</div>
+									<div class="music_information">
+										<div class="loader">
+											<svg id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
+												<title>Audio Wave</title>
+												<path id="Line_1" data-name="Line 1" d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z"/>
+												<path id="Line_2" data-name="Line 2" d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z"/>
+												<path id="Line_3" data-name="Line 3" d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91Z"/>
+												<path id="Line_4" data-name="Line 4" d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91Z"/>
+												<path id="Line_5" data-name="Line 5" d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91Z"/>
+												<path id="Line_6" data-name="Line 6" d="M30.91,10l-0.12,0A1,1,0,0,0,30,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H30.91Z"/>
+												<path id="Line_7" data-name="Line 7" d="M36.91,0L36.78,0A1,1,0,0,0,36,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H36.91Z"/>
+												<path id="Line_8" data-name="Line 8" d="M42.91,9L42.78,9A1,1,0,0,0,42,10V28a1,1,0,1,0,2,0s0,0,0,0V10a1,1,0,0,0-1-1H42.91Z"/>
+												<path id="Line_9" data-name="Line 9" d="M48.91,15l-0.12,0A1,1,0,0,0,48,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H48.91Z"/>
+											</svg>
+										</div>
+										<div>
+											<div class="title">Astroworld</div>
+											<div class="artist">Travis Scott</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="infos">
+									<div class="photo_user">
+										<img src="assets/img/match_user_photo.png">
+									</div>
+									<div>
+										<div class="name">Bruno Leonardo</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam, odio amet ea ut autem dolorum natus commodi aliquam nam molestiae ducimus soluta temporibus eveniet? Aut nesciunt blanditiis voluptate neque!
+										</div>
+										<ul>
+											<li><img src="assets/img/profile_ico_location.png" alt="">  <span>São Paulo, SP</span></li>
+											<li><img src="assets/img/profile_ico_age.png" alt="">  <span>24 anos</span></li>
+											<li><img src="assets/img/profile_ico_music.png" alt="">  <span>125 músicas</span></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="interaction">
+									<div class="secondary"><img src="assets/img/card_ico_star.png" alt=""></div>
+									<div class="primary letsRock" data-id="3"><img src="assets/img/card_ico_rock.png" alt=""></div>
+									<div class="secondary letsReject"  data-id="3"><img src="assets/img/card_ico_close.png" alt=""></div>
+								</div>
+							</div>
+							
+							<div class="result" id="result4">
+								<div class="head">
+									<div class="covers">
+										<div class="cover" style="background-image: url('assets/img/music_cover.png');">
+											<div class="up_down_volt">
+												<div class="down"><span>‹</span></div>
+												<div class="up"><span>›</span></div>
+											</div>
+										</div>
+										<div class="cover" style="background-image: url('assets/img/music_cover.png');">
+											<div class="up_down_volt">
+												<div class="down"><span>‹</span></div>
+												<div class="up"><span>›</span></div>
+											</div>
+										</div>
+									</div>
+									<div class="music_information">
+										<div class="loader">
+											<svg id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
+												<title>Audio Wave</title>
+												<path id="Line_1" data-name="Line 1" d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z"/>
+												<path id="Line_2" data-name="Line 2" d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z"/>
+												<path id="Line_3" data-name="Line 3" d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91Z"/>
+												<path id="Line_4" data-name="Line 4" d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91Z"/>
+												<path id="Line_5" data-name="Line 5" d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91Z"/>
+												<path id="Line_6" data-name="Line 6" d="M30.91,10l-0.12,0A1,1,0,0,0,30,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H30.91Z"/>
+												<path id="Line_7" data-name="Line 7" d="M36.91,0L36.78,0A1,1,0,0,0,36,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H36.91Z"/>
+												<path id="Line_8" data-name="Line 8" d="M42.91,9L42.78,9A1,1,0,0,0,42,10V28a1,1,0,1,0,2,0s0,0,0,0V10a1,1,0,0,0-1-1H42.91Z"/>
+												<path id="Line_9" data-name="Line 9" d="M48.91,15l-0.12,0A1,1,0,0,0,48,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H48.91Z"/>
+											</svg>
+										</div>
+										<div>
+											<div class="title">Astroworld</div>
+											<div class="artist">Travis Scott</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="infos">
+									<div class="photo_user">
+										<img src="assets/img/match_user_photo.png">
+									</div>
+									<div>
+										<div class="name">Bruno Leonardo</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam, odio amet ea ut autem dolorum natus commodi aliquam nam molestiae ducimus soluta temporibus eveniet? Aut nesciunt blanditiis voluptate neque!
+										</div>
+										<ul>
+											<li><img src="assets/img/profile_ico_location.png" alt="">  <span>São Paulo, SP</span></li>
+											<li><img src="assets/img/profile_ico_age.png" alt="">  <span>24 anos</span></li>
+											<li><img src="assets/img/profile_ico_music.png" alt="">  <span>125 músicas</span></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="interaction">
+									<div class="secondary"  data-id="4"><img src="assets/img/card_ico_star.png" alt=""></div>
+									<div class="primary letsRock" data-id="4"><img src="assets/img/card_ico_rock.png" alt=""></div>
+									<div class="secondary letsReject"  data-id="4"><img src="assets/img/card_ico_close.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="surprise active2">
+					<div class="default">
+						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M11.5 8h-7a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1zm-7-1a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-7zm0-3a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+						</svg>
+						<span>1</span> / 15
+					</div>
+					<div class="active">
+						SUPREENDA-ME!
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-2">
+				<div class="player ">
+					<b>Ouvindo Agora</b>
+					<img class="cover" src="assets/img/current_music_cover.png" alt="">
+					<ul class="music_controll">
+						<li class="prev"><img src="assets/img/arrow.png" alt=""></li>
+						<li><img src="assets/img/player_close.png" alt=""></li>
+						<li><img src="assets/img/player_control.png" alt=""></li>
+						<li><img src="assets/img/player_favorite.png" alt=""></li>
+						<li><img src="assets/img/arrow.png" alt=""></li>
+					</ul>
+					<div class="next_musics">
+						<div class="music">
+							<img src="assets/img/current_music_cover.png" alt="">
+							<div>
+								<div class="title">Nome da Música</div>
+								<div class="artist">Artista</div>
+							</div>
+						</div>
+						<div class="music">
+							<img src="assets/img/current_music_cover.png" alt="">
+							<div>
+								<div class="title">Nome da Música</div>
+								<div class="artist">Artista</div>
+							</div>
+						</div>
+						<div class="music">
+							<img src="assets/img/current_music_cover.png" alt="">
+							<div>
+								<div class="title">Nome da Música</div>
+								<div class="artist">Artista</div>
+							</div>
+						</div>
+						<div class="music">
+							<img src="assets/img/current_music_cover.png" alt="">
+							<div>
+								<div class="title">Nome da Música</div>
+								<div class="artist">Artista</div>
+							</div>
+						</div>
+						<div class="music">
+							<img src="assets/img/current_music_cover.png" alt="">
+							<div>
+								<div class="title">Nome da Música</div>
+								<div class="artist">Artista</div>
+							</div>
+						</div>
+						<div class="music">
+							<img src="assets/img/current_music_cover.png" alt="">
+							<div>
+								<div class="title">Nome da Música</div>
+								<div class="artist">Artista</div>
+							</div>
+						</div>
+						<div class="music">
+							<img src="assets/img/current_music_cover.png" alt="">
+							<div>
+								<div class="title">Nome da Música</div>
+								<div class="artist">Artista</div>
+							</div>
+						</div>
+						<div class="music">
+							<img src="assets/img/current_music_cover.png" alt="">
+							<div>
+								<div class="title">Nome da Música</div>
+								<div class="artist">Artista</div>
+							</div>
+						</div>
+						<div class="music">
+							<img src="assets/img/current_music_cover.png" alt="">
+							<div>
+								<div class="title">Nome da Música</div>
+								<div class="artist">Artista</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		
+	</footer>
+	
+	<!-- Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	
+	<!-- Slick -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
+	<!-- AOS -->
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

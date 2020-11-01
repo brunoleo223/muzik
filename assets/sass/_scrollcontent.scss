@@ -1,0 +1,27 @@
+.scrollcontent{
+    h1{
+        font-weight: 900;
+    }
+	width: 100%;
+    height: 100vh;
+    color: #fff;
+    padding:50px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: transparent !important; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: transparent; 
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.582); 
+    }
+}

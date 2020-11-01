@@ -1,0 +1,68 @@
+.surprise{
+    height: 40px;
+    display: table;
+    margin: auto;
+    background: #ccc;
+    color: rgb(136, 136, 136);
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    svg{
+        margin-top: -5px;
+    }
+    .active{
+        display: none;
+    }
+    &.active{
+        font-weight: 900;
+        background: rgb(250,209,38);
+        color: #fff;
+        background: linear-gradient(90deg, rgba(250,209,38,1) 0%, rgba(255,84,79,1) 100%);
+        .active{
+            display: initial;
+        }
+        .default{
+            display: none;
+        }
+    }
+}
+
+.result_surprise{
+    border: 10px solid #ff8f0e;
+}
+
+.modal_surprise{
+    position: fixed;
+    width: 100%;
+    height: 100vh;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 9  ;
+    .back{
+        width: 90%;
+        max-width: 500px;
+        padding: 20px;
+        border-radius: 30px;
+        background: linear-gradient(90deg, rgba(250,209,38,1) 0%, rgba(255,84,79,1) 100%);
+        color: #fff;;
+        .titulo{
+            font-size: 2rem;
+            font-weight: 900;
+            text-align: center;
+        }
+        button{
+            display: table;
+            border: 2px solid #fff;
+            color: #fff;
+            background-color: transparent;
+            margin: auto;
+            padding: 20px;
+            border-radius: 20px ;
+        }
+    }
+}

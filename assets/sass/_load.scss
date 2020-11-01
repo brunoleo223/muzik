@@ -1,0 +1,130 @@
+.load{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @-webkit-keyframes rotating /* Safari and Chrome */ {
+        from {
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    @keyframes rotating {
+        from {
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        to {
+            -ms-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    img {
+        -webkit-animation: rotating 2s linear infinite;
+        -moz-animation: rotating 2s linear infinite;
+        -ms-animation: rotating 2s linear infinite;
+        -o-animation: rotating 2s linear infinite;
+        animation: rotating 2s linear infinite;
+    }
+    
+    background: linear-gradient(270deg, #7e2cdb, #1c34c6, #2c90e1, #99d4df);
+    background-size: 800% 800%;
+    
+    -webkit-animation: ringColor 3s ease infinite;
+    -moz-animation: ringColor 3s ease infinite;
+    -o-animation: ringColor 3s ease infinite;
+    animation: ringColor 3s ease infinite;
+    @-webkit-keyframes ringColor {
+        0%{background-position:94% 0%}
+        50%{background-position:7% 100%}
+        100%{background-position:94% 0%}
+    }
+    @-moz-keyframes ringColor {
+        0%{background-position:94% 0%}
+        50%{background-position:7% 100%}
+        100%{background-position:94% 0%}
+    }
+    @-o-keyframes ringColor {
+        0%{background-position:94% 0%}
+        50%{background-position:7% 100%}
+        100%{background-position:94% 0%}
+    }
+    @keyframes ringColor {
+        0%{background-position:94% 0%}
+        50%{background-position:7% 100%}
+        100%{background-position:94% 0%}
+    }
+}
+
+.load-surprise{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .loader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    #wave {
+        width: 150px;
+        fill: #fff;
+        margin-right: 15px;
+    }
+    
+    @for $i from 1 through 9 {
+        #Line_#{$i} {
+            animation: pulse 1s infinite;
+            animation-delay: $i * .15s;
+        }
+    }
+    
+    background: linear-gradient(90deg, rgba(250,209,38,1) 0%, rgba(255,84,79,1) 100%);
+    background-size: 800% 800%;
+    
+    -webkit-animation: ringColor 3s ease infinite;
+    -moz-animation: ringColor 3s ease infinite;
+    -o-animation: ringColor 3s ease infinite;
+    animation: ringColor 3s ease infinite;
+    @-webkit-keyframes ringColor {
+        0%{background-position:94% 0%}
+        50%{background-position:7% 100%}
+        100%{background-position:94% 0%}
+    }
+    @-moz-keyframes ringColor {
+        0%{background-position:94% 0%}
+        50%{background-position:7% 100%}
+        100%{background-position:94% 0%}
+    }
+    @-o-keyframes ringColor {
+        0%{background-position:94% 0%}
+        50%{background-position:7% 100%}
+        100%{background-position:94% 0%}
+    }
+    @keyframes ringColor {
+        0%{background-position:94% 0%}
+        50%{background-position:7% 100%}
+        100%{background-position:94% 0%}
+    }
+}

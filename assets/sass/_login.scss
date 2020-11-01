@@ -1,0 +1,31 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    height: 100vh;
+    form{
+        max-width: 400px;
+        display: table;
+        padding: 30px;
+        img{
+            padding: 0 40px;
+            margin-bottom: 30px;
+        }
+        .input-group-text{
+            background-color: transparent;
+            border: 1px solid #ced4da;
+            backdrop-filter: blur(1px);
+            color: #fff;
+        }
+        .form-control{
+            background-color: transparent;
+            color: #fff;
+            &::placeholder{
+                color: #fff;
+                font-weight: 300;
+            }
+        }
+    }
+}
