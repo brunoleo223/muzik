@@ -48,7 +48,7 @@ $('.surprise').click(function(){
 	if(stage >= 15){
 		$('.load-surprise').removeClass('d-none');
 		setTimeout(() => {
-			window.location.replace('../../surpreenda.html')
+			window.location.replace('../../surpreenda.html');
 		}, 1000);
 	}
 });
@@ -105,4 +105,14 @@ $('.spotify_tab').click(function(){
 
 	$('#spotify_tab').removeClass('d-none');	
 	$('#trends_tab').addClass('d-none');	
+})
+
+// genero
+$('.genero').click(function(){
+	if($(this).hasClass('active')){
+		$(this).removeClass('active');	
+	} else {
+		$(this).addClass('active');	
+	}
+	
 })

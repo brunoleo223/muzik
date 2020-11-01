@@ -29,3 +29,87 @@
         }
     }
 }
+
+.generos{
+    width: 100%;
+    height: 400px !important;
+    overflow: scroll !important;
+    /* width */
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: transparent; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: rgba(2, 2, 2, 0.219); 
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.582); 
+    }
+    .genero{
+        display: table;
+        width: 50%;
+        float: left;
+        padding: 10px;
+        .c{
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.123);
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 3px solid transparent;
+            &:hover{
+                border-color: #fff;
+            }
+            img{
+                margin-bottom: 10px;
+            }
+        }
+        &.active{
+            .c{
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+.Navigation-logInToSpotify {
+    position: relative;
+    padding: 5px 19px 5px 4px;
+    border-radius: 30px;
+    color: rgba(255,255,255,1);
+    font-size: 14px;
+    margin: auto;
+    display: table !important;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: none;
+    background-color: rgba(46,189,89,1);
+    svg {
+        fill: currentColor;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    &:hover{
+        *{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+.SignInButton-logoWrapper {
+    width: 49px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
