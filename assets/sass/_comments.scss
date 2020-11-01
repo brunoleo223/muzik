@@ -1,0 +1,96 @@
+.comments{
+  position: absolute;
+  top: -105vh; 
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.226);
+  color: #fff;
+  padding: 15px 15px 0 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.466);
+  transition: all .4s;
+  .nave{
+    display: flex;
+    justify-content: space-between;
+    svg{
+      cursor: pointer;
+    }
+  }
+  .scroll{
+    width: 100%;
+    height: calc(93.7vh - 150px);
+    padding-top: 20px;
+    padding-right: 15px ;
+    overflow: scroll;
+    /* width */
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: rgba(2, 2, 2, 0.219); 
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.582); 
+    }
+  }
+  .comment{
+    margin-bottom: 15px;
+    display: flex;
+    font-size: 11px;
+    img{
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  &.active{
+    top: 0 !important;
+  }
+  .your_comment{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    .rate{
+      padding: 0 20px;
+      display: flex;
+      font-size: 2rem;
+      justify-content: space-between;
+    }
+    input{
+      border: 0;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button{
+      background: linear-gradient(270deg, #7e2cdb, #1c34c6, #2c90e1, #99d4df);
+      color: #fff;
+      border-radius: 10px;
+      color: #fff;;
+      border: 0;
+      padding: 10px;
+    }
+  }
+}
+
+.sidebar{
+  padding-right: 1.5rem !important;
+}
+
+
+@media (max-width: 800px){
+  .comments{
+    top: -205vh; 
+  }
+  .sidebar{
+    padding-right: 0 !important;
+  }
+}

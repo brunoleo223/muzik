@@ -325,7 +325,7 @@
 @media (max-width: 800px){
     .results{
         height: calc(83vh - 120px);
-        padding-top: 0;
+        padding: 0 20px 0 20px;
         .col-md-7{
             padding: 0 30px;
         }

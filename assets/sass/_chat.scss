@@ -1,0 +1,91 @@
+.chat{
+    .intro{
+        display: flex;
+        align-items: center;
+        a{
+            color: #fff;
+        }
+        h2{
+            font-weight: 900;
+            margin-left: 9px;
+            margin-bottom: -4px;
+            margin-top: 10px;
+        }
+        p{
+            font-size: 12px;
+            color: rgb(48, 248, 92);
+        }
+        img{
+            width: 70px;
+            height: 70px;
+            margin-left: 20px;
+        }
+    }
+    .chating{
+        overflow: scroll;
+        height: 400px;
+        padding-right: 15px;
+        /* width */
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgba(2, 2, 2, 0.219); 
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.582); 
+        }
+        .message{
+            display: table;
+            width: 100%;
+            .text{
+                padding: 10px;
+                font-size: 12px;
+                width: auto;
+                max-width: 500px;
+                border-radius: 15px;
+                margin-bottom: 10px;
+            }
+            &.send{
+                .text{
+                    float: right;
+                    background: #2c90e1;
+                }
+            }
+            &.recived{
+                .text{
+                    background: #1c34c6;
+                }
+            }
+        }
+    }
+
+    .texting{
+        display: flex;
+        width: 100%;
+        input, button{
+            border: 0;
+            padding: 10px;
+        }
+        input{
+            width: 100%;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+        button{
+            background-color: #2c90e1;
+            color: #fff;
+            border-radius: 100%;
+            width: 45px;
+        }
+    }
+}

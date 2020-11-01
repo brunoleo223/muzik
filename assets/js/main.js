@@ -19,7 +19,9 @@ $('.covers').slick({
 // load inicial
 $( document ).ready(function() {
 	$( ".load" ).fadeOut( "slow", function() {});
-	$( ".load-surprise" ).fadeOut( "slow", function() {});
+	setTimeout(() => {
+		$( ".load-surprise" ).fadeOut( "slow", function() {});
+	}, 1000);
 });
 
 
@@ -75,4 +77,32 @@ $('.profile img').click(function(){
 // fecha menu mobile
 $('.close').click(function(){
 	$('.content').removeClass('active');	
+})
+
+// abre comentários
+$('.music').click(function(){
+	$('.comments').addClass('active');	
+})
+
+// fecha comentários
+$('.close_comments').click(function(){
+	$('.comments').removeClass('active');	
+})
+
+// aba trends
+$('.trends_tab').click(function(){
+	$(this).addClass('active');	
+	$('.spotify_tab').removeClass('active');	
+
+	$('#trends_tab').removeClass('d-none');	
+	$('#spotify_tab').addClass('d-none');	
+})
+
+// aba spotify
+$('.spotify_tab').click(function(){
+	$(this).addClass('active');	
+	$('.trends_tab').removeClass('active');	
+
+	$('#spotify_tab').removeClass('d-none');	
+	$('#trends_tab').addClass('d-none');	
 })

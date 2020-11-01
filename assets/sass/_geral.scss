@@ -70,6 +70,24 @@ body{
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: rgba(2, 2, 2, 0.219); 
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.582); 
+  }
 }
 
 .bg-cover{

@@ -1,6 +1,30 @@
+.spotify{
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+.nave_sidebar{
+  display: flex;
+  button{
+    height: 40px;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.459);
+    opacity: .7;
+    border-radius: 10px 10px 0px 0px;  
+    margin-top: 30px;
+    &.active{
+      background: linear-gradient(270deg, #7e2cdb, #1c34c6, #2c90e1, #99d4df);
+      opacity: 1;
+    }
+  }
+}
 .player{
   border-left: 1px solid rgba(255, 255, 255, 0.459);
-  height: 100vh;
+  border-right: 1px solid rgba(255, 255, 255, 0.459);
+  height: calc(100vh - 70px);
   overflow: hidden;
   padding: 15px;
   color: #fff;
@@ -37,7 +61,7 @@
   }
   .next_musics{
     overflow-y: scroll;
-    height: 250px;
+    height: calc(100vh - 70px);
     /* width */
     &::-webkit-scrollbar {
       width: 4px;
@@ -58,21 +82,20 @@
       background: rgba(0, 0, 0, 0.582); 
     }
     .music{
+      cursor: pointer;
       display: flex;
-      font-size: 11px;
+      font-size: 12px;
       align-items: center;
-      opacity: .5;
-      &:hover{
-        opacity: 1;
-        cursor: pointer;
-      }
       img{
-        width: 35px;
+        width: 45px;
         margin-right: 10px;
         margin-bottom: 10px;
       }
       .artist{
         opacity: .5;
+      }
+      &:hover{
+        margin-left: 10px;
       }
     }
   }
