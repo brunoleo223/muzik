@@ -21,8 +21,29 @@ Use os seguintes dados de acessos:
 Para acessar MVP, basta clonar esse projeto e utilizá-lo localmente.
 
 Para rodar a IA:
+É necessário instalar os seguintes pacotes:
+- Flask
 ```
-código
+pip install flask
+```
+- Pandas
+```
+pip install pandas
+```
+- Scikit-learn
+```
+pip install scikit-learn
+```
+- Psycopg
+```
+pip install psycopg
+```
+
+Também é necessário instalar o banco de dados postgreSQL.
+
+Para executar a API, entre na pasta muzik_api e execute o comando
+```
+python app.py
 ```
 
 # Especificações Técnicas 
@@ -32,3 +53,7 @@ código
 - Boostrap 4.5
 
 ### Back-end
+- Python 3.8
+- PostgreSQL 12
+- Flask 1.1.2
+- Scikit-learn 0.23.1
