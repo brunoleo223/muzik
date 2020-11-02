@@ -24,16 +24,28 @@ $( document ).ready(function() {
 	}, 1000);
 });
 
-
+var myInit = { method: 'GET',
+               mode: 'cors',
+			   cache: 'default' };
+			   
 // rock conecxão
-$('.letsRock').click(function(){
+$(document).on('click','.letsRock',function() {
 	let id = $(this).attr('data-id');
+	fetch(`http://127.0.0.1:5002/api/connection?id_user=${user.id}&id_con=${id}`, myInit);
 	$('#result'+id).addClass('rock');
 	$('#result'+id).fadeOut( "slow", function() {});
 	surprise();
 });
 
 // rejeitar conexão
+$(document).on('click','.letsReject',function() {
+	let id = $(this).attr('data-id');
+	fetch(`http://127.0.0.1:5002/api/reject?id_user=${user.id}&id_con=${id}`, myInit);
+	$('#result'+id).addClass('rock');
+	$('#result'+id).fadeOut( "slow", function() {});
+	surprise();
+});
+
 $('.letsReject').click(function(){
 	let id = $(this).attr('data-id');
 	$('#result'+id).addClass('reject');
@@ -48,7 +60,7 @@ $('.surprise').click(function(){
 	if(stage >= 15){
 		$('.load-surprise').removeClass('d-none');
 		setTimeout(() => {
-			window.location.replace('../../surpreenda.html');
+			window.location.replace('surpreenda.html');
 		}, 1000);
 	}
 });
