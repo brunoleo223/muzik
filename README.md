@@ -40,6 +40,7 @@ pip install psycopg
 ```
 
 Também é necessário instalar o banco de dados postgreSQL e importar o arquivo SQL que está na pasta database.
+Crie seu usuario postgreSQL com a senha '89503572' ou altere o código dentro da pasta muzik_api para que a senha do banco corresponda a senha definida.
 
 Para executar a API, entre na pasta muzik_api e execute o comando
 ```
